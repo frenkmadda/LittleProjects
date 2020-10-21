@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+.mainPageP1 {
+	font-family: Apple Chancery;
+	font-style: italic;
+	background-image:url(../immagini/lato.jpg);
+	color: white;
+	text-align: center;
+	padding: 50px;
+	position:relative;
+	height: auto !important;
+	width:auto !important;
+	max-width:45.15%;
+	margin: 0 auto 100px;
+	margin-top:100px;
+	border:solid;
+	border-color:white;
+	border-width:0.5px;
+	z-index:-31;
+	top:30px;
+}
+
+.imageUp{
+	border:solid;
+	border-width:0.5px;
+	border-color:white;
+	width:39%;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto 0px;
+	margin-top:60px;
+	height:420px;
+	top:60px;
+}
+
+.main img{
+	position:relative;
+	left:550px;
+	top:135px;
+	width:40%;
+	border:solid;
+	border-width:thin;
+	border-color:darkgreen;
+}
+
+footer {
+	font-weight: 100;
+	text-align: center;
+	font-size: 50%;
+	font-weight: 200;
+	background-color:rgb(30, 152, 255);
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	width: 100%;
+	position:fixed;
+	left:0;
+	bottom:0;
+	z-index:-30;
+}
+@media screen and (max-width: 1000px) {
+  .mainPageP1 {
+    width:auto;
+    z-index:-1;
+    font-size:16px;
+  }
+    .mainPageP1 div{
+    display:block;
+  }
+  footer{
+  	font-size:9.5px;
+  }
+  .main img{
+  	left:240px;
+  	top:100px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .mainPageP1 {
+    width:auto;
+    z-index:-1;
+    font-size:13px;
+  }
+    .mainPageP1 div{
+    display:block;
+  }
+  footer{
+  	font-size:9.5px;
+  	z-index:2;
+  }
+  .main img{
+  	left:120px; 	
+  }
+}

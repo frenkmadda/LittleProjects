@@ -1,0 +1,182 @@
+@charset "ISO-8859-1";
+ * { margin:0; padding: 0;}
+ 
+ 
+ body {
+ 	font-family: Geneva; 
+ 	font-size: 20px;
+ 	background-image: url(../immagini/pet.jpg);
+ 	background-repeat:repeat;
+ 	background-position:fixed;
+ 	background-size:100%;
+ 	
+ }
+ 
+ header{
+	display:block;
+	background-image:url(../immagini/header.jpg);
+	background-size:100%;
+	font-family: "Georgia", serif, cursive;
+	text-align:Center;
+	border:solid;
+ 	border-width:thin;
+ 	border-color:black;
+ 	text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+ 	position:fixed;
+ 	left:0px;
+ 	width:100%;
+ 	top:0px;
+ 	z-index:20;
+}
+ 
+ .menù {
+ 	position: fixed;
+ 	left:160px;
+	width: 95%;
+	top:49px;
+	font-weight: 300;
+	box-shadow: 0 4px 4px -4px #2b2b2b;
+	z-index: 20;
+	overflow: hidden;
+}
+ 
+ .menù a{
+   	display:block;
+   	float: left;
+   	width:19%;
+  	text-align: center;
+  	padding: 14px 16px;
+  	font-size: 20px;
+  	font-family: Georgia, serif, cursive;
+	color: white;
+	text-decoration: none;
+	border:solid;
+	border-width:thin;
+	border-color:black;
+	background-color:blue;
+ }
+
+
+
+ .menù a.active{
+ 	background:rgb(30, 0, 81);
+}
+
+ .menù a:hover {
+ 	cursor: pointer;
+ 	background:rgb(30, 152, 255);
+ }
+ 
+ .logo{
+ 	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+ }
+ 
+ .welcome{
+ 	font-size:18px;
+ 	text-align:center;
+ 	margin-left:750px;
+ 	margin-right:-10px;
+ 	margin-bottom:80px;
+ 	color:white;
+ 	text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+ 	position:fixed;
+ 	top:110px;
+ 	right:5px;
+ 	border:dotted;
+ 	border-color:black;
+ 	border:thin;
+ 	background-image: url(../immagini/foliage.jpg);
+ 	height:100%;
+ 	width:25%;
+ }
+ 
+ .left{
+	text-align:center;
+ 	margin-left:-10px;
+ 	margin-right:10px;
+ 	margin-bottom:80px;
+ 	color:white;
+ 	text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+ 	position:fixed;
+ 	top:110px;
+ 	left:5px;
+ 	border:dotted;
+ 	border-color:black;
+ 	border:thin;
+ 	background-image: url(../immagini/foliage.jpg);
+ 	height:100%;
+ 	width:25%;
+ 
+ }
+ 
+ .welcome div.video{
+ 	color:white;
+ 	position:relative;
+ 	left:10px;
+ 	top:40px;
+ }
+ 
+@media screen and (max-width: 1000px) {
+  .menù a {width:6%; font-size:13px;}
+  .menù{
+  width:140%;
+  height:5.7%;
+  position:fixed;
+  top:0px;
+  }
+  .welcome{
+  	font-size:15px;
+  	top:0px;
+  }
+ .left{
+ font-size:18px;
+ top:0px;
+ }
+ header{display:none;}
+}
+
+
+@media screen and (max-width: 585px) {
+  .menù a {width:12%; font-size:9px; font-weight:bold;}
+  .menù{
+    left:0;
+  }
+   .welcome{
+  	font-size:0px;
+  }
+ .left{
+ font-size:0px;
+ top:0px;
+ }
+ .logo{
+ 	position:absolute;
+ 	height:15%;
+ 	top:80px;
+ 	left:0px;
+ }
+ .welcome div.video{
+ 	color:white;
+ 	position:relative;
+ 	left:0px;
+ 	top:100px;
+ }
+}
+
+@media screen and (max-width: 585px) {
+  .mainPageP2 {
+    width:auto;
+    z-index:-1;
+  }
+	
+  .mainPageP2 div{
+    display:block;
+  }
+  
+  footer {
+  	font-size:9.5px;
+  }
+}

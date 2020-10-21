@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>MaddaPugliaZooParkWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>zooPark.html</welcome-file>
+  </welcome-file-list>
+  
+  <session-config>
+  	<session-timeout> 15 </session-timeout>
+	<cookie-config> <http-only>true</http-only>
+	<secure>true</secure> </cookie-config>
+  </session-config>
+  
+  <filter>
+	<filter-name>httpHeaderSecurity</filter-name> <filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class> <init-param><param-name>xssProtectionEnabled</param-name><param-value>true</param-value>
+	</init-param> <init-param><param-name>antiClickJackingEnabled</param-name><param-value>true</param-value>
+	</init-param> <init-param><param-name>antiClickJackingOption</param-name><param-value>DENY</param-value>
+	</init-param>
+</filter> 
+
+<filter-mapping>
+	<filter-name>httpHeaderSecurity</filter-name>
+	<url-pattern>/*</url-pattern> 
+</filter-mapping>
+
+<security-constraint>
+<web-resource-collection>
+<web-resource-name>Informazioni Sensibili</web-resource-name>
+<url-pattern>/userarea/*</url-pattern>
+<url-pattern>/login.jsp</url-pattern>
+
+</web-resource-collection>
+
+<user-data-constraint>
+<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+</user-data-constraint>
+</security-constraint>
+</web-app>

@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+.mainPageP3 {
+	font-family: Apple Chancery;
+	font-style: italic;
+	background-image:url(../immagini/lato.jpg);
+	color: white;
+	text-align: center;
+	padding: 50px;
+	position:relative;
+	height: auto !important;
+	width:auto !important;
+	max-width:45.15%;
+	margin: 0 auto 100px;
+	margin-top:30px;
+	border:solid;
+	border-color:white;
+	border-width:0.5px;
+	z-index:-1;
+}
+form#logoutForm{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: large;
+}
+
+form#logoutForm ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+input#buttonLogout{
+	width: 100%;
+	border: none;
+  	padding: 15px 15px;
+  	font-size: large;
+  	background-color: blue;
+  	color: white;
+}
+
+input#buttonLogout:hover{
+  	cursor: pointer;
+ 	background:rgb(30, 152, 255);
+}
+

@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+.main{
+	position:absolute;
+	left:545px;
+	right:20px;
+	top:200px;
+}
+#errorName, #errorSurname, #errorPassword, #errorEmail, #errorWeight, #errorPhone, #success{
+	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main{
+  	left:180px;
+  	font-size:19px;
+  }
+  .main #submitter{
+  	position:relative;
+  	width:90%;
+  	left:80px;
+  	top:20px;
+  }
+ 
+}
+@media screen and (max-width: 590px) {
+  .main{
+  	left:88px;
+  	font-size:14px;
+  	width:55%;
+  }
+  .main #submitter{
+  	position:relative;
+  	width:60%;
+  	left:45px;
+  }
+ 
+}
